@@ -30,3 +30,5 @@
 @if(backpack_user()->can('Manage Logs'))
     <li class='nav-item'><a class='nav-link' href='{{ backpack_url('log') }}'><i class='nav-icon la la-terminal'></i> Logs</a></li>
 @endif
+
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('contact-request') }}"><i class="nav-icon la la-th-list"></i> Contact requests</a></li>

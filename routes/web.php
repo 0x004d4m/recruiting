@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Website\ApplicationController;
+use App\Http\Controllers\Website\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/admin');
-});
+Route::get('/', [HomeController::class,'index']);
+Route::post('/', [HomeController::class,'store']);
+Route::get('/apply', [ApplicationController::class,'index']);
+Route::post('/apply', [ApplicationController::class,'store']);
