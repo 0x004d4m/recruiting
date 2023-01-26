@@ -32,3 +32,4 @@
 @endif
 
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('contact-request') }}"><i class="nav-icon la la-th-list"></i> Contact requests</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('company') }}"><i class="nav-icon la la-th-list"></i> Companies</a></li>

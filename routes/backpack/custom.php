@@ -23,4 +23,5 @@ Route::group([
     Route::crud('candidate-academic-achievement', 'CandidateAcademicAchievementCrudController');
     Route::crud('candidate-tool', 'CandidateToolCrudController');
     Route::crud('contact-request', 'ContactRequestCrudController');
+    Route::crud('company', 'CompanyCrudController');
 }); // this should be the absolute last line of this file
